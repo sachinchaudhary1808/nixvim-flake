@@ -3,22 +3,22 @@
 i'm learning python and this is my simple nixvim configuration
 
 
-#How to use
-simply u can do this to test my config
+# How to use
+You can test my config using this command
 
 ```
 nix run github:sachinchaudhary1808/nixvim-flake
 ```
-or u can install it using 
+or u can install it using this command
 
-nix profile install github:sachinchaudhary1808/nixvim-flake
+```nix profile install github:sachinchaudhary1808/nixvim-flake```
 
-or u can clone my repo and in that repo u can run this
+or u can clone my repo and in that repo u can run this command
 
 ```
 nix run .
 ```
-and after that if u wanna install it you can use this command in cloned directroy
+and after that if u wanna install it you can use this command in cloned directroy to install this flake
 
 ```
 nix profile install
