@@ -22,7 +22,7 @@ in {
     */
     # inputs.nixvim.nixosModules.nixvim
   ];
-config = {
+  config = {
     colorschemes.gruvbox.enable = true;
     #colorschemes.catppuccin = {
     #     enable = true;
@@ -39,6 +39,9 @@ config = {
     };
 
     plugins.lualine.enable = true;
+    plugins.noice.enable = true;
+    plugins.notify.enable = true;
+    plugins.luasnip.enable = true; # not configured
     # plugins.startup.enable = true;
     plugins.nvim-colorizer.enable = true;
     plugins.leap.enable = true;
@@ -50,6 +53,7 @@ config = {
     plugins.twilight.enable = true;
     plugins.lsp.servers.pyright.enable = true;
     plugins.lsp.servers.nil_ls.enable = true;
+    plugins.cmp-nvim-lsp.enable = true;
     plugins.cmp.enable = true;
     plugins.treesitter.enable = true;
     plugins.lsp.enable = true;
@@ -104,7 +108,6 @@ config = {
           desc = "formatting";
         };
       }
-
     ];
     # ...
 
@@ -112,13 +115,12 @@ config = {
       neoformat
     ];
 
-  autoCmd = [
-    {
-      event = ["TermOpen"];
-      pattern = ["*"];
-      command = "startinsert";
-    }
-  ];
-};
-
+    autoCmd = [
+      {
+        event = ["TermOpen"];
+        pattern = ["*"];
+        command = "startinsert";
+      }
+    ];
+  };
 }
