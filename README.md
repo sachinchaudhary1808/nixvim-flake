@@ -11,7 +11,9 @@ nix run github:sachinchaudhary1808/nixvim-flake
 ```
 or u can install it using this command
 
-```nix profile install github:sachinchaudhary1808/nixvim-flake```
+```
+nix profile install github:sachinchaudhary1808/nixvim-flake
+```
 
 or u can clone my repo and in that repo u can run this command
 
