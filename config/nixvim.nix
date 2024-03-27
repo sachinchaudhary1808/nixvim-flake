@@ -39,6 +39,7 @@ in {
     };
 
     plugins.lualine.enable = true;
+    plugins.which-key.enable = true;
     plugins.noice.enable = true;
     plugins.notify.enable = true;
     plugins.luasnip.enable = true; # not configured
