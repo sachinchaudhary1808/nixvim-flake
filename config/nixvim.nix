@@ -40,12 +40,12 @@ in {
 
     plugins.lualine.enable = true;
     # plugins.which-key.enable = true;
-    plugins.noice.enable = true;
+    # plugins.noice.enable = true;
     plugins.vim-css-color.enable = true;
-    plugins.notify.enable = true;
+    # plugins.notify.enable = true;
     plugins.luasnip.enable = true; # not configured
     # plugins.startup.enable = true;
-    # plugins.nvim-colorizer.enable = true;
+    plugins.nvim-colorizer.enable = true;
     plugins.leap.enable = true;
     plugins.sniprun.enable = true;
     # plugins.commentary.enable = true;
