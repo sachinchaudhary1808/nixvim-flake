@@ -23,15 +23,15 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    colorschemes.gruvbox = {
-		enable = true;
-	};
+ #    colorschemes.gruvbox = {
+	# 	enable = true;
+	# };
 
-    # colorschemes.catppuccin = {
-    #   enable = true;
-    #   # flavour = "mocha";
-    #   transparentBackground = true; 
-    # };
+    colorschemes.catppuccin = {
+      enable = true;
+      # flavour = "mocha";
+      transparentBackground = true; 
+    };
     #
     opts = {
       number = true; # Show line numbers
@@ -41,7 +41,7 @@ in {
       # backspace = "indent,eol,start";
       # backup = true;
       # cmdheight = 0;
-      colorcolumn = "80";
+      # colorcolumn = "80";
       /*
       completeopt = "menu,menuone,noselect";
       */
@@ -59,13 +59,13 @@ in {
       /*
       pumheight = 0;
       */
-      shiftwidth = 4;
-      showtabline = 1;
-      signcolumn = "yes";
-      smartcase = true;
-      tabstop = 4;
-      termguicolors = true;
-      timeoutlen = 300;
+      shiftwidth = 2;
+      # showtabline = 1;
+      # signcolumn = "yes";
+      # smartcase = true;
+      # tabstop = 4;
+      # termguicolors = true;
+      # timeoutlen = 300;
       # undofile = true;
       # updatetime = 300;
       wrap = false;
