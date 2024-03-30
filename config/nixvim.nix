@@ -30,7 +30,7 @@ in {
     # transparentBackground = true;
     #    };
 
-    options = {
+    opts = {
       number = true; # Show line numbers
       relativenumber = true; # Show relative line numbers
 
@@ -39,7 +39,9 @@ in {
     };
 
     plugins.lualine.enable = true;
-    # plugins.which-key.enable = true;
+    plugins.which-key.enable = true;
+    plugins.alpha.enable = true;
+    plugins.alpha.theme = "startify";
     # plugins.noice.enable = true;
     plugins.vim-css-color.enable = true;
     # plugins.notify.enable = true;
