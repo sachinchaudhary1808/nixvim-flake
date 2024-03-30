@@ -29,8 +29,8 @@ in {
 
     colorschemes.catppuccin = {
       enable = true;
-      # flavour = "mocha";
-      # transparentBackground = true;
+      flavour = "mocha";
+      transparentBackground = true;
     };
     #
     opts = {
@@ -40,7 +40,7 @@ in {
       # autoindent = true;
       # backspace = "indent,eol,start";
       # backup = true;
-      cmdheight = 2;
+      cmdheight = 1;
       # colorcolumn = "80";
       /*
       completeopt = "menu,menuone,noselect";
