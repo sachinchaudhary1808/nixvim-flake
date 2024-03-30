@@ -23,13 +23,16 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    # colorschemes.gruvbox.enable = true;
-    colorschemes.catppuccin = {
-      enable = true;
-      flavour = "mocha";
-      transparentBackground = true;
-    };
+    colorschemes.gruvbox = {
+		enable = true;
+	};
 
+    # colorschemes.catppuccin = {
+    #   enable = true;
+    #   # flavour = "mocha";
+    #   transparentBackground = true; 
+    # };
+    #
     opts = {
       number = true; # Show line numbers
       relativenumber = true; # Show relative line numbers
@@ -37,7 +40,7 @@ in {
       # autoindent = true;
       # backspace = "indent,eol,start";
       # backup = true;
-      cmdheight = 1;
+      # cmdheight = 0;
       colorcolumn = "80";
       /*
       completeopt = "menu,menuone,noselect";
