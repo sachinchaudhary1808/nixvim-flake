@@ -30,7 +30,7 @@ in {
     colorschemes.catppuccin = {
       enable = true;
       flavour = "mocha";
-      transparentBackground = true;
+     /*  transparentBackground = true; */
     };
     #
     opts = {
