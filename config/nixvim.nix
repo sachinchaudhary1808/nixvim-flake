@@ -23,15 +23,16 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    #    colorschemes.gruvbox = {
-    # 	enable = true;
-    # };
-
-    colorschemes.catppuccin = {
+    colorschemes.gruvbox = {
       enable = true;
-      flavour = "mocha";
-     /*  transparentBackground = true; */
     };
+
+    # colorschemes.tokyonight.enable = true;
+    # colorschemes.catppuccin = {
+    #   enable = true;
+    #   # flavour = "mocha";
+    #  /*  transparentBackground = true; */
+    # };
     #
     opts = {
       number = true; # Show line numbers
@@ -45,7 +46,6 @@ in {
       /*
       completeopt = "menu,menuone,noselect";
       */
-      #
       # conceallevel = 0;
       # cursorline = true;
       # expandtab = true;
@@ -68,13 +68,14 @@ in {
       # timeoutlen = 300;
       # undofile = true;
       # updatetime = 300;
-      wrap = false;
+      # wrap = false;
       # writebackup = true;
       clipboard = "unnamedplus";
     };
 
     plugins = {
       lualine.enable = true;
+      none-ls.enable = true;
       toggleterm.enable = true;
       which-key.enable = true;
       alpha.enable = true;
