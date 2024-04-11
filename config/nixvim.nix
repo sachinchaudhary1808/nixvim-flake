@@ -23,17 +23,17 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    colorschemes.gruvbox = {
-      enable = true;
-    };
+    # colorschemes.gruvbox = {
+    #   enable = true;
+    # };
 
     # colorschemes.tokyonight.enable = true;
-    # colorschemes.catppuccin = {
-    #   enable = true;
-    #   # flavour = "mocha";
-    #  /*  transparentBackground = true; */
-    # };
-    #
+    colorschemes.catppuccin = {
+      enable = true;
+      flavour = "mocha";
+      # transparentBackground = true;
+    };
+
     opts = {
       number = true; # Show line numbers
       relativenumber = true; # Show relative line numbers
