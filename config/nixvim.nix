@@ -23,10 +23,10 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    # colorschemes.gruvbox = {
-    #   enable = true;
-    # };
-
+    #   colorschemes.gruvbox = {
+    #     enable = true;
+    #   };
+    #
     # colorschemes.tokyonight.enable = true;
     colorschemes.catppuccin = {
       enable = true;
@@ -74,6 +74,12 @@ in {
     };
 
     plugins = {
+      lsp.servers.ccls.enable = true;
+      surround.enable = true;
+      lsp.servers.jsonls.enable = true;
+      lsp.servers.clangd.enable = true;
+      indent-blankline.enable = true;
+      lsp.servers.ccls.autostart = true;
       lualine.enable = true;
       none-ls.enable = true;
       toggleterm.enable = true;
@@ -95,6 +101,7 @@ in {
       twilight.enable = true;
       lsp.servers.pyright.enable = true;
       lsp.servers.nil_ls.enable = true;
+      lsp.servers.nil_ls.autostart = true;
       cmp-nvim-lsp.enable = true;
       cmp.enable = true;
       treesitter.enable = true;

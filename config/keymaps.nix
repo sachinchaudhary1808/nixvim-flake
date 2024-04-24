@@ -19,7 +19,7 @@
     {
       action = "<cmd>term python3 %<CR>";
       key = "<F8>"; # this line is changed
-      mode = ["n" "i"];
+      mode = ["n" ];
       options = {
         desc = "runs currunt python file in the terminal";
       };
@@ -46,6 +46,14 @@
       mode = ["n"];
       options = {
         desc = "open terminal";
+      };
+    }
+    {
+      action = "<cmd>SnipRun<CR>";
+      key = "<space>r"; # this line is changed
+      mode = ["v"];
+      options = {
+        desc = "run's the selected code";
       };
     }
   ];
