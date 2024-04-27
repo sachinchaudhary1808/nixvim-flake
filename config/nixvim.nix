@@ -23,14 +23,16 @@ in {
     # inputs.nixvim.nixosModules.nixvim
   ];
   config = {
-    #   colorschemes.gruvbox = {
-    #     enable = true;
-    #   };
+    # colorschemes.gruvbox = {
+    #   enable = true;
+    # };
     #
     # colorschemes.tokyonight.enable = true;
     colorschemes.catppuccin = {
       enable = true;
-      flavour = "mocha";
+      settings = {
+        flavour = "mocha";
+      };
       # transparentBackground = true;
     };
 
@@ -74,12 +76,9 @@ in {
     };
 
     plugins = {
-      lsp.servers.ccls.enable = true;
+      wtf.enable = true;
       surround.enable = true;
-      lsp.servers.jsonls.enable = true;
-      lsp.servers.clangd.enable = true;
       indent-blankline.enable = true;
-      lsp.servers.ccls.autostart = true;
       lualine.enable = true;
       none-ls.enable = true;
       toggleterm.enable = true;
@@ -99,21 +98,34 @@ in {
       comment.enable = true;
       neo-tree.enable = true;
       twilight.enable = true;
-      lsp.servers.pyright.enable = true;
-      lsp.servers.nil_ls.enable = true;
-      lsp.servers.nil_ls.autostart = true;
-      cmp-nvim-lsp.enable = true;
-      cmp.enable = true;
       treesitter.enable = true;
-      lsp.enable = true;
-      cmp.settings = {
-        sources = [
-          {name = "nvim_lsp";}
-        ];
-      };
 
       nvim-autopairs = {
         enable = true;
+      };
+
+      lsp = {
+        enable = true;
+        servers = {
+          nixd.enable = true;
+          nixd.autostart = true;
+          ccls.enable = true;
+          jsonls.enable = true;
+          clangd.enable = true;
+          ccls.autostart = true;
+
+          pyright.enable = true;
+        };
+      };
+
+      cmp-nvim-lsp.enable = true;
+      cmp = {
+        enable = true;
+        settings = {
+          sources = [
+            {name = "nvim_lsp";}
+          ];
+        };
       };
     };
 
