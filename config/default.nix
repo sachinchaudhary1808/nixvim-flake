@@ -1,7 +1,8 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./nixvim.nix
+    ./options.nix
     ./keymaps.nix 
+    ./plugins.nix
   ];
 }
