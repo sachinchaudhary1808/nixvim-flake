@@ -4,5 +4,11 @@
     ./options.nix
     ./keymaps.nix 
     ./plugins.nix
+    ./cmp.nix
+    ./lsp.nix
+    ./git.nix
+    ./none-ls.nix
+    ./treesiter.nix
+    ./ionide.nix
   ];
 }

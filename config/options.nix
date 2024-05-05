@@ -35,7 +35,7 @@ in {
     number = true; # Show line numbers
     relativenumber = true; # Show relative line numbers
 
-    # autoindent = true;
+     autoindent = true;
     # backspace = "indent,eol,start";
     # backup = true;
     cmdheight = 1;
@@ -45,12 +45,12 @@ in {
     */
     # conceallevel = 0;
     # cursorline = true;
-    # expandtab = true;
+     expandtab = true;
     # foldenable = true;
     # foldexpr = "nvim_treesitter#foldexpr()";
     # foldlevel = 5;
     # foldmethod = "expr";
-    # ignorecase = true;
+     ignorecase = true;
     # laststatus = 3;
     # mouse = "a";
     /*
@@ -60,7 +60,7 @@ in {
     # showtabline = 1;
     # signcolumn = "yes";
     # smartcase = true;
-    # tabstop = 4;
+     tabstop = 2;
     # termguicolors = true;
     # timeoutlen = 300;
     # undofile = true;
