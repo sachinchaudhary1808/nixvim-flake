@@ -1,4 +1,6 @@
+# here all the plugins...................
 {pkgs, ...}: {
+  # lskind for icons.................................
   plugins.lspkind = {
     enable = true;
     symbolMap = {
@@ -9,12 +11,18 @@
       ellipsis_char = "...";
     };
   };
+  # most of the plugins............... they are messed and i will not write any docs..........
   plugins = {
     wtf.enable = true;
+    # neorg.enable = true;
     lsp-format.enable = true;
+    neocord.enable = true;
+
+    ## none-ls
     none-ls.enable = true;
     none-ls.sources.diagnostics.mypy.enable = true;
     none-ls.enableLspFormat = true;
+
     friendly-snippets.enable = true;
     oil.enable = true;
     lazygit.enable = true;
@@ -28,11 +36,17 @@
       enable = true;
       alwaysShowBufferline = false;
     };
+
+    ## startup theme...
     alpha.enable = true;
     alpha.theme = "startify";
+    alpha.iconsEnabled = true;
+
     # noice.enable = true;
     vim-css-color.enable = true;
     # notify.enable = true;
+
+    ## snippets...
     luasnip = {
       enable = true;
       extraConfig = {
@@ -40,6 +54,7 @@
         store_selection_keys = "<Tab>";
       };
     }; # not configured
+
     # plugins.startup.enable = true;
     nvim-colorizer.enable = true;
     leap.enable = true;
@@ -50,11 +65,12 @@
     neo-tree.enable = true;
     twilight.enable = true;
     treesitter.enable = true;
-
+    # nvim-autopairs for like if u open a (, " or like anything like this it will autocomplete it and make it ()"...
     nvim-autopairs = {
       enable = true;
     };
 
+    # lsp servers..................................................................
     lsp = {
       enable = true;
       servers = {
@@ -66,6 +82,8 @@
         pyright.enable = true;
       };
     };
+
+    # cmp settings..............................................................
 
     cmp-cmdline.enable = true;
     cmp-nvim-lsp.enable = true;

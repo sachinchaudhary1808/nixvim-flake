@@ -1,6 +1,7 @@
 {
   keymaps = [
     {
+      # Neotree
       action = "<cmd>Neotree toggle<CR>";
       key = "<space>n"; # this line is changed
       mode = "n";
@@ -9,6 +10,7 @@
       };
     }
     {
+      #info
       action = "<cmd>lua vim.lsp.buf.hover()<CR>";
       key = "<space>k"; # this line is changed
       mode = "n";
@@ -17,14 +19,16 @@
       };
     }
     {
+      # execute currunt file of python in terminal
       action = "<cmd>term python3 %<CR>";
       key = "<F8>"; # this line is changed
-      mode = ["n" ];
+      mode = ["n"];
       options = {
         desc = "runs currunt python file in the terminal";
       };
     }
     {
+      #telescope file finding
       action = "<cmd>Telescope find_files<CR>";
       key = "<space>f"; # this line is changed
       mode = ["n"];
@@ -33,6 +37,7 @@
       };
     }
     {
+      # Neoformat
       action = "<cmd>Neoformat<CR>";
       key = "<space>="; # this line is changed
       mode = ["n"];
@@ -41,6 +46,7 @@
       };
     }
     {
+      #opening a terminal in neovim
       action = "<cmd>ToggleTerm<CR>";
       key = "<space>t"; # this line is changed
       mode = ["n"];
@@ -49,11 +55,21 @@
       };
     }
     {
+      # running a single code using SnipRun
       action = "<cmd>SnipRun<CR>";
       key = "<space>r"; # this line is changed
       mode = ["v"];
       options = {
         desc = "run's the selected code";
+      };
+    }
+    {
+      #opening oil.nvim for files
+      action = "<cmd>Oil<CR>";
+      key = "-"; # this line is changed
+      mode = ["n"];
+      options = {
+        desc = "opens oil.nvim";
       };
     }
   ];
