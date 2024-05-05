@@ -8,7 +8,9 @@
     ./lsp.nix
     ./git.nix
     ./none-ls.nix
-    ./treesiter.nix
+    ./treesitter.nix
     ./ionide.nix
+    ./lazy.nix
+    ./wilder.nix
   ];
 }
