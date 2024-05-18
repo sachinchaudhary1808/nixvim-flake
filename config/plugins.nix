@@ -1,11 +1,9 @@
 # here all the plugins...................
-{pkgs, ...}: {
+{ pkgs, ... }: {
   # lskind for icons.................................
   plugins.lspkind = {
     enable = true;
-    symbolMap = {
-      Copilot = "";
-    };
+    symbolMap = { Copilot = ""; };
     extraOptions = {
       maxwidth = 50;
       ellipsis_char = "...";
@@ -17,16 +15,18 @@
     # neorg.enable = true;
     lsp-format.enable = true;
     neocord.enable = true;
-
-    
+    tmux-navigator.enable = true;
+    dap.enable = true;
 
     friendly-snippets.enable = true;
     oil.enable = true;
     lazygit.enable = true;
     surround.enable = true;
+
     # dressing.enable = true;
     indent-blankline.enable = true;
     lualine.enable = true;
+    # lightline.enable = true;
     toggleterm.enable = true;
     which-key.enable = true;
     bufferline = {
@@ -43,25 +43,25 @@
     vim-css-color.enable = true;
     # notify.enable = true;
 
-
     # plugins.startup.enable = true;
     nvim-colorizer.enable = true;
     leap.enable = true;
-    sniprun.enable = true;
+    sniprun = {
+      enable = true;
+      display = [ "Terminal" "VirtualText" ];
+      liveModeToggle = "on";
+    };
     # commentary.enable = true;
     telescope.enable = true;
     comment.enable = true;
     neo-tree.enable = true;
     twilight.enable = true;
     # nvim-autopairs for like if u open a (, " or like anything like this it will autocomplete it and make it ()"...
-    nvim-autopairs = {
-      enable = true;
-    };
+    nvim-autopairs = { enable = true; };
 
     # lsp servers..................................................................
-    
+
     # cmp settings..............................................................
 
-    
   };
 }

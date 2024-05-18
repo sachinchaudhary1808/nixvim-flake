@@ -1,12 +1,7 @@
-{
-  pkgs,
-  lib,
-  inputs,
-  ...
-}: let
+{ pkgs, lib, inputs, ... }:
+let
 in {
-  imports = [
-  ];
+  imports = [ ];
   # config = {
 
   # colorschemes..................................................................
@@ -14,14 +9,14 @@ in {
   # colorschemes.gruvbox = {
   #   enable = true;
   # };
+  # colorschemes.cyberdream.enable = true;
 
-  # colorschemes.tokyonight.enable = true;
+  wrapRc = true;
+  enableMan = true;
 
   colorschemes.catppuccin = {
     enable = true;
-    settings = {
-      flavour = "mocha";
-    };
+    settings = { flavour = "mocha"; };
     # transparentBackground = true;
   };
 
@@ -34,33 +29,29 @@ in {
   opts = {
     number = true; # Show line numbers
     relativenumber = true; # Show relative line numbers
-
-     autoindent = true;
+    autoindent = true;
     # backspace = "indent,eol,start";
     # backup = true;
     cmdheight = 1;
     # colorcolumn = "80";
-    /*
-    completeopt = "menu,menuone,noselect";
-    */
+    # completeopt = "menu,menuone,noselect";
     # conceallevel = 0;
     # cursorline = true;
-     expandtab = true;
+    expandtab = true;
+    updatetime = 100;
     # foldenable = true;
     # foldexpr = "nvim_treesitter#foldexpr()";
     # foldlevel = 5;
     # foldmethod = "expr";
-     ignorecase = true;
+    ignorecase = true;
     # laststatus = 3;
     # mouse = "a";
-    /*
-    pumheight = 0;
-    */
+    # pumheight = 0;
     shiftwidth = 2;
     # showtabline = 1;
     # signcolumn = "yes";
     # smartcase = true;
-     tabstop = 2;
+    tabstop = 2;
     # termguicolors = true;
     # timeoutlen = 300;
     # undofile = true;
@@ -74,16 +65,17 @@ in {
 
   extraPlugins = with pkgs.vimPlugins; [
     neoformat
+    vim-test
+    vimux
+    vim-quickrun
   ];
 
   # open terminal in insert mode...( or may be i'm wrong i don't know...)
 
-  autoCmd = [
-    {
-      event = ["TermOpen"];
-      pattern = ["*"];
-      command = "startinsert";
-    }
-  ];
+  autoCmd = [{
+    event = [ "TermOpen" ];
+    pattern = [ "*" ];
+    command = "startinsert";
+  }];
   # };
 }

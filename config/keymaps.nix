@@ -1,5 +1,6 @@
 {
   globals.mapleader = " ";
+
   keymaps = [
     {
       # Neotree
@@ -22,13 +23,7 @@
       mode = [ "n" ];
       options = { desc = "runs currunt python file in the terminal"; };
     }
-    {
-      #telescope file finding
-      action = "<cmd>Telescope find_files<CR>";
-      key = "<space>f"; # this line is changed
-      mode = [ "n" ];
-      options = { desc = "telescope finding files"; };
-    }
+
     {
       # Neoformat
       action = "<cmd>Neoformat<CR>";
@@ -47,7 +42,7 @@
       # running a single code using SnipRun
       action = "<cmd>SnipRun<CR>";
       key = "<space>r"; # this line is changed
-      mode = [ "v" ];
+      mode = [ "v" "n" ];
       options = { desc = "run's the selected code"; };
     }
     {
@@ -67,6 +62,27 @@
       key = "<leader>q";
       options = { desc = "exit file"; };
     }
+    {
+      action = "<cmd>Telescope live_grep<CR>";
+      key = "<leader>fs";
+      options = { desc = "telescope live_grep"; };
+    }
+    {
+      action = "<cmd>Telescope find_files<CR>";
+      key = "<leader>ff";
+      options = { desc = "telescope file finding"; };
+    }
+    {
+      action = "<cmd>Telescope buffers<CR>";
+      key = "<leader>fb";
+      options = { desc = "telescope buffer finding"; };
+    }
+    {
+      action = "<cmd>bd#<CR>";
+      key = "<leader>cb";
+      options = { desc = "killing opened output buffer"; };
+    }
+
   ];
 }
 # ...
