@@ -45,13 +45,13 @@
       mode = [ "v" "n" ];
       options = { desc = "run's the selected code"; };
     }
-    {
-      #opening oil.nvim for files
-      action = "<cmd>Oil<CR>";
-      key = "-"; # this line is changed
-      mode = [ "n" ];
-      options = { desc = "opens oil.nvim"; };
-    }
+    # {
+    #   #opening oil.nvim for files
+    #   action = "<cmd>Oil<CR>";
+    #   key = "-"; # this line is changed
+    #   mode = [ "n" ];
+    #   options = { desc = "opens oil.nvim"; };
+    # }
     {
       action = "<cmd>write<CR>";
       key = "<leader>w";
@@ -74,8 +74,14 @@
     }
     {
       action = "<cmd>Telescope buffers<CR>";
-      key = "<leader>fb";
+      key = "<leader>fg";
       options = { desc = "telescope buffer finding"; };
+    }
+    {
+
+      action = "<cmd>Telescope file_browser <CR>";
+      key = "<leader>fb";
+      options = { desc = "telescope file browsing"; };
     }
     {
       action = "<cmd>bd#<CR>";

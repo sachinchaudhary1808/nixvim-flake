@@ -19,7 +19,7 @@
     dap.enable = true;
 
     friendly-snippets.enable = true;
-    oil.enable = true;
+    # oil.enable = true;
     lazygit.enable = true;
     surround.enable = true;
 
@@ -29,10 +29,6 @@
     # lightline.enable = true;
     toggleterm.enable = true;
     which-key.enable = true;
-    bufferline = {
-      enable = true;
-      alwaysShowBufferline = false;
-    };
 
     ## startup theme...
     alpha.enable = true;
@@ -53,6 +49,7 @@
     };
     # commentary.enable = true;
     telescope.enable = true;
+    telescope.extensions.file-browser.enable = true;
     comment.enable = true;
     neo-tree.enable = true;
     twilight.enable = true;

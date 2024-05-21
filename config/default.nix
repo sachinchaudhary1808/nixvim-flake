@@ -13,6 +13,7 @@
     ./ionide.nix
     ./lazy.nix
     ./wilder.nix
+    ./bufferline.nix
   ];
 
   globals.mapleader = " ";
