@@ -16,18 +16,17 @@
     lsp-format.enable = true;
     neocord.enable = true;
     tmux-navigator.enable = true;
-    dap.enable = true;
 
     friendly-snippets.enable = true;
     # oil.enable = true;
     lazygit.enable = true;
+    trim.enable = true;
     surround.enable = true;
 
     # dressing.enable = true;
     indent-blankline.enable = true;
     lualine.enable = true;
     # lightline.enable = true;
-    toggleterm.enable = true;
     which-key.enable = true;
 
     ## startup theme...
@@ -50,6 +49,7 @@
     # commentary.enable = true;
     telescope.enable = true;
     telescope.extensions.file-browser.enable = true;
+telescope.extensions.ui-select.enable = true;
     comment.enable = true;
     neo-tree.enable = true;
     twilight.enable = true;

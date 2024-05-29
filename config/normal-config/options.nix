@@ -11,13 +11,16 @@ in {
 
   wrapRc = true;
   enableMan = true;
-
-  # colorschemes.onedark.enable = true;
-  colorschemes.catppuccin = {
+  colorschemes.nightfox = {
     enable = true;
-    settings = { flavour = "mocha"; };
-    # transparentBackground = true;
+    # flavor = "dayfox";
   };
+  # colorschemes.onedark.enable = true;
+  # colorschemes.catppuccin = {
+  #   enable = true;
+  #   settings = { flavour = "mocha"; };
+  #   # transparentBackground = true;
+  # };
 
   # colorschemes.kanagawa.enable = true;
 
@@ -29,15 +32,16 @@ in {
     number = true; # Show line numbers
     relativenumber = true; # Show relative line numbers
     autoindent = true;
+    smartindent = true;
     # backspace = "indent,eol,start";
-    backup = true;
+    # backup = true;
     cmdheight = 1;
     # colorcolumn = "80";
     # completeopt = "menu,menuone,noselect";
     # conceallevel = 0;
     # cursorline = true;
     expandtab = true;
-    updatetime = 100;
+    # updatetime = 100;
     # foldenable = true;
     # foldexpr = "nvim_treesitter#foldexpr()";
     # foldlevel = 5;
@@ -46,7 +50,7 @@ in {
     # laststatus = 3;
     # mouse = "a";
     # pumheight = 0;
-    shiftwidth = 2;
+    shiftwidth = 4;
     showtabline = 1;
     # signcolumn = "yes";
     # smartcase = true;
@@ -56,7 +60,7 @@ in {
     undofile = true;
     # updatetime = 300;
     # wrap = false;
-    writebackup = true;
+    # writebackup = true;
     clipboard = "unnamedplus";
   };
 

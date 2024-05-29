@@ -8,6 +8,7 @@
         nixd.enable = true;
         nixd.autostart = true;
         jsonls.enable = true;
+        lua-ls.enable = true;
         clangd = {
           enable = true;
           autostart = true;
