@@ -31,7 +31,7 @@ nix profile install .
 and after that every change u make u just need to upgrade with this command
 
 ```
-nix profile upgrade
+nix profile upgrade .
 ```
 
 u should also check which number your nixvim-flake got when install using nix profiles.. so if it's like 0(if u haven't installed anything with nix profiles) u can just do
