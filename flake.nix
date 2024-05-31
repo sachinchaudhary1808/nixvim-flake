@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
   };
 
   outputs = { nixvim, flake-parts, ... }@inputs:
@@ -20,8 +21,12 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
+
           nixvimModule = {
-            inherit pkgs;
+            pkgs = import inputs.nixpkgs {
+              inherit system;
+              overlays = [ inputs.neorg-overlay.overlays.default ];
+            };
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {

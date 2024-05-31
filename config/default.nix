@@ -29,6 +29,7 @@
     ./normal-config/keymaps.nix
 
     #ui
+    ./ui/indent-blankline.nix
     ./ui/fidget.nix
     ./ui/bufferline.nix
 
@@ -39,5 +40,8 @@
   ];
 
   globals.mapleader = " ";
+
+  globals.maplocalleader = ",";
+  plugins.codeium-nvim.enable = true;
 
 }

@@ -89,6 +89,13 @@
       options = { desc = "killing opened output buffer"; };
     }
 
+    # for neorg
+    {
+      action = "<cmd>Neorg<CR>";
+      key = "<leader>o";
+      options = { desc = "opening neorg with telesope"; };
+    }
+
   ];
 }
 # ...

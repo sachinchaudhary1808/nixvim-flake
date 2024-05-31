@@ -24,7 +24,6 @@
     surround.enable = true;
 
     # dressing.enable = true;
-    indent-blankline.enable = true;
     lualine.enable = true;
     # lightline.enable = true;
     which-key.enable = true;
@@ -35,6 +34,68 @@
     alpha.iconsEnabled = true;
 
     # noice.enable = true;
+    # dashboard = {
+    #   enable = true;
+    #   settings.config = {
+    #     header = [
+    #       ""
+    #       "⡿⠋⠄⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣌⠻⣿⣿"
+    #       "⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⣿"
+    #       "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠹"
+    #       "⣿⣿⡟⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡛⢿⣿⣿⣿⣮⠛⣿⣿⣿⣿⣿⣿⡆"
+    #       "⡟⢻⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣣⠄⡀⢬⣭⣻⣷⡌⢿⣿⣿⣿⣿⣿"
+    #       "⠃⣸⡀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠈⣆⢹⣿⣿⣿⡈⢿⣿⣿⣿⣿"
+    #       "⠄⢻⡇⠄⢛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⡆⠹⣿⣆⠸⣆⠙⠛⠛⠃⠘⣿⣿⣿⣿"
+    #       "⠄⠸⣡⠄⡈⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠁⣠⣉⣤⣴⣿⣿⠿⠿⠿⡇⢸⣿⣿⣿"
+    #       "⠄⡄⢿⣆⠰⡘⢿⣿⠿⢛⣉⣥⣴⣶⣿⣿⣿⣿⣻⠟⣉⣤⣶⣶⣾⣿⡄⣿⡿⢸"
+    #       "⠄⢰⠸⣿⠄⢳⣠⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣼⣿⣿⣿⣿⣿⣿⡇⢻⡇⢸"
+    #       "⢷⡈⢣⣡⣶⠿⠟⠛⠓⣚⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⠇⠘"
+    #       "⡀⣌⠄⠻⣧⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⢿⣿⣿⣿⣿⣿⡟⠘⠄⠄"
+    #       "⣷⡘⣷⡀⠘⣿⣿⣿⣿⣿⣿⣿⣿⡋⢀⣠⣤⣶⣶⣾⡆⣿⣿⣿⠟⠁⠄⠄⠄⠄"
+    #       "⣿⣷⡘⣿⡀⢻⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣿⣿⣿⣿⣷⡿⠟⠉⠄⠄⠄⠄⡄⢀"
+    #       "⣿⣿⣷⡈⢷⡀⠙⠛⠻⠿⠿⠿⠿⠿⠷⠾⠿⠟⣛⣋⣥⣶⣄⠄⢀⣄⠹⣦⢹⣿"
+    #       ""
+    #     ];
+    #     center = [
+    #       {
+    #         icon = "  ";
+    #         desc = "Find File                               ";
+    #         action = "Telescope find_files find_command=rg,--hidden,--files";
+    #         shortcut = "SPC f f";
+    #       }
+    #       {
+    #         icon = "  ";
+    #         desc = "Recently opened                         ";
+    #         action = "Telescope oldfiles";
+    #         shortcut = "SPC f r";
+    #       }
+    #       {
+    #         icon = "פּ  ";
+    #         desc = "File browser                            ";
+    #         action = "NvimTreeToggle";
+    #         shortcut = "SPC f o";
+    #       }
+    #       {
+    #         icon = "  ";
+    #         desc = "Search for word                         ";
+    #         action = "Telescope live_grep";
+    #         shortcut = "SPC f g";
+    #       }
+    #       {
+    #         icon = "  ";
+    #         desc = "Help                                    ";
+    #         action = "Telescope help_tags";
+    #         shortcut = "SPC f h";
+    #       }
+    #       {
+    #         icon = "  ";
+    #         desc = "Commands                                ";
+    #         action = "Telescope commands";
+    #         shortcut = "SPC ?  ";
+    #       }
+    #     ];
+    #   };
+    # };
     vim-css-color.enable = true;
     # notify.enable = true;
 
@@ -49,7 +110,7 @@
     # commentary.enable = true;
     telescope.enable = true;
     telescope.extensions.file-browser.enable = true;
-telescope.extensions.ui-select.enable = true;
+    telescope.extensions.ui-select.enable = true;
     comment.enable = true;
     neo-tree.enable = true;
     twilight.enable = true;

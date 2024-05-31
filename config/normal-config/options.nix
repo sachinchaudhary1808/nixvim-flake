@@ -11,16 +11,16 @@ in {
 
   wrapRc = true;
   enableMan = true;
-  colorschemes.nightfox = {
-    enable = true;
-    # flavor = "dayfox";
-  };
-  # colorschemes.onedark.enable = true;
-  # colorschemes.catppuccin = {
+  # colorschemes.nightfox = {
   #   enable = true;
-  #   settings = { flavour = "mocha"; };
-  #   # transparentBackground = true;
+  #   # flavor = "dayfox";
   # };
+  # colorschemes.onedark.enable = true;
+  colorschemes.catppuccin = {
+    enable = true;
+    settings = { flavour = "mocha"; };
+    # transparentBackground = true;
+  };
 
   # colorschemes.kanagawa.enable = true;
 
@@ -72,7 +72,15 @@ in {
     vimux
     vim-quickrun
     vim-be-good
+    neorg
+    neorg-telescope
   ];
+  extraConfigLua = builtins.readFile ./config.lua;
+
+  # extraConfigLuaPost =
+  #   # lua
+  #   ''
+  #   '';
 
   # open terminal in insert mode...( or may be i'm wrong i don't know...)
 
