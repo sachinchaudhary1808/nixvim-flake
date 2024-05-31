@@ -42,6 +42,6 @@
   globals.mapleader = " ";
 
   globals.maplocalleader = ",";
-  plugins.codeium-nvim.enable = true;
+  # plugins.codeium-nvim.enable = true;
 
 }
