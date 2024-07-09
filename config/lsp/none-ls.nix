@@ -3,7 +3,8 @@
     enable = true;
     enableLspFormat = true;
     sources = {
-      # diagnostics = { mypy.enable = true; };
+      diagnostics = { mypy.enable = true; };
+      # diagnostics = { ruff.enable = true; };
       formatting = {
         nixfmt.enable = true;
         markdownlint.enable = true;

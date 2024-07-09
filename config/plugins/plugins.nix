@@ -12,6 +12,7 @@
   # most of the plugins............... they are messed and i will not write any docs..........
   plugins = {
     wtf.enable = true;
+    edgy.enable = true;
     # neorg.enable = true;
     lsp-format.enable = true;
     neocord.enable = true;
@@ -111,8 +112,8 @@
     telescope.enable = true;
     telescope.extensions.file-browser.enable = true;
     telescope.extensions.ui-select.enable = true;
-    comment.enable = true;
-    neo-tree.enable = true;
+    # comment.enable = true;
+    # neo-tree.enable = true;
     twilight.enable = true;
     # nvim-autopairs for like if u open a (, " or like anything like this it will autocomplete it and make it ()"...
     nvim-autopairs = { enable = true; };

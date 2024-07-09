@@ -23,7 +23,9 @@
         snippet = { expand = "luasnip"; };
 
         sources = [
-          { name = "nvim_lsp"; }
+          {
+            name = "nvim_lsp";
+          }
           # { name = "codeium"; }
           { name = "path"; }
           { name = "buffer"; }
@@ -74,6 +76,11 @@
           completion = { border = "solid"; };
           documentation = { border = "solid"; };
         };
+        experimental = {
+          ghost_text = true;
+          native_menu = false;
+        };
+
       };
     };
   };
